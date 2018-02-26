@@ -11,13 +11,15 @@ for local development.
   GOOS=linux go build -o main
   ```
 
-2. Start the **SAM Local** server
+2. Install [SAM Local](https://github.com/awslabs/aws-sam-local)
+
+3. Start the **SAM Local** server
 
   ```bash
   sam local start-api
   ```
 
-3. Access the API (`curl` needs to be installed)
+4. Access the API (`curl` needs to be installed)
 
   ```bash
   curl -X POST -d world http://localhost:3000/products/test
